@@ -38,6 +38,24 @@ class PollTests(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0]["record_id"], "review:1")
 
+    def test_comment_with_null_user_has_null_author(self):
+        items = [dict(id=1, created_at=SINCE, body=body(), user=None)]
+        self.assertIsNone(normalize(items, "comment")[0]["author"])
+
+    def test_review_with_null_user_has_null_author(self):
+        items = [dict(id=1, submitted_at=SINCE, body=body(), user=None)]
+        self.assertIsNone(normalize(items, "review")[0]["author"])
+
+    def test_inline_comment_with_null_user_has_null_author(self):
+        items = [dict(id=1, created_at=SINCE, body=body(), user=None)]
+        self.assertIsNone(normalize(items, "inline")[0]["author"])
+
+    def test_missing_user_has_null_author_for_all_sources(self):
+        for source in ("comment", "review", "inline"):
+            with self.subTest(source=source):
+                item = dict(id=1, created_at=SINCE, submitted_at=SINCE, body=body())
+                self.assertIsNone(normalize([item], source)[0]["author"])
+
     def test_first_rework_receipt_does_not_execute_notes(self):
         current = state()
         receipt, _ = receive(current, [record()], "2026-10-09T17:00:05Z")

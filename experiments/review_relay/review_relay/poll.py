@@ -41,7 +41,7 @@ def normalize(items, source):
             continue
         result.append({"record_id": f"{source}:{item['id']}", "body": item.get("body"),
                        "published_at": stamp, "url": item.get("html_url"),
-                       "author": item.get("user", {}).get("login")})
+                       "author": (item.get("user") or {}).get("login")})
     return result
 
 

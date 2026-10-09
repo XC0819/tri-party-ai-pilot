@@ -12,6 +12,8 @@
 
 The user authorized execution in this session. Existing skills are used for planning and execution; unavailable superpowers helpers are not dependencies. All repository writes stay under experiments/review_relay/.
 
+Revision applied during execution: the user explicitly requested the updated Issue #4 (2026-10-09T17:00:22Z). Its B/E sections authorize at most two local Chrome audit notifications. The initial manual-trigger instructions below document the original plan, superseded by this revision. GitHub remains the only decision source and the original 30-minute deadline is unchanged.
+
 ### Task 1: Workflow
 - Create tests/test_workflow.py with at least eight independent cases for the explicit Issue contract. Run `python -m unittest discover -s tests -v` to capture the initial failure.
 - Create review_relay/workflow.py and __init__.py. Implement the four actions and required ValueError checks. Repeat the same command.
@@ -30,6 +32,6 @@ The user authorized execution in this session. Existing skills are used for plan
 
 ### Task 4: Live experiment
 - Start bounded read-only polling immediately after PR creation, save waiting_for_audit and actual timestamps locally.
-- Ask the user to manually trigger the project director with the PR number. Do not operate ChatGPT.
+- Send one scoped structured audit notification in the user's already logged-in local Chrome. Send at most one more after the single authorized rework. Do not parse webpage audit conclusions, access settings or bypass restrictions.
 - On a matching request_changes, inspect notes for scope and permission; perform at most one local rework, rerun tests, commit/push the same branch and refresh evidence. Resume round 2 without extending the original deadline.
 - On approval record await_user_approval; on blocked/conflict/timeout/error stop. Never merge. Report each gate from actual evidence, including limits on Codex invocation counts.
