@@ -1,3 +1,3 @@
-from .slugify import slugify
+from .slugify import slugify, truncate_slug
 
-__all__ = ["slugify"]
+__all__ = ["slugify", "truncate_slug"]
