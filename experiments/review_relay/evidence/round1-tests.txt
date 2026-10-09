@@ -1,0 +1,41 @@
+test_all_context_fields_must_match (test_audit.AuditTests.test_all_context_fields_must_match) ... ok
+test_code_fence_is_supported (test_audit.AuditTests.test_code_fence_is_supported) ... ok
+test_conflicting_decisions_stop (test_audit.AuditTests.test_conflicting_decisions_stop) ... ok
+test_duplicate_id_is_ignored (test_audit.AuditTests.test_duplicate_id_is_ignored) ... ok
+test_invalid_records_are_rejected (test_audit.AuditTests.test_invalid_records_are_rejected) ... ok
+test_naive_timestamp_is_ignored (test_audit.AuditTests.test_naive_timestamp_is_ignored) ... ok
+test_notes_are_only_data (test_audit.AuditTests.test_notes_are_only_data) ... ok
+test_older_record_is_ignored (test_audit.AuditTests.test_older_record_is_ignored) ... ok
+test_plain_prose_is_ignored (test_audit.AuditTests.test_plain_prose_is_ignored) ... ok
+test_valid_structured_audit (test_audit.AuditTests.test_valid_structured_audit) ... ok
+stopped: blocked: permission failure
+test_api_permission_failure_stops_without_retry_or_permission_change (test_poll.PollTests.test_api_permission_failure_stops_without_retry_or_permission_change) ... ok
+test_approval_keeps_human_gate (test_poll.PollTests.test_approval_keeps_human_gate) ... ok
+test_blocked_stops (test_poll.PollTests.test_blocked_stops) ... ok
+timeout: stopped at original 30-minute deadline
+test_expired_deadline_makes_no_api_call (test_poll.PollTests.test_expired_deadline_makes_no_api_call) ... ok
+test_first_rework_receipt_does_not_execute_notes (test_poll.PollTests.test_first_rework_receipt_does_not_execute_notes) ... ok
+test_guard_accepts_open_unmerged_expected_head (test_poll.PollTests.test_guard_accepts_open_unmerged_expected_head) ... ok
+test_guard_stops_on_merged_closed_or_changed_head (test_poll.PollTests.test_guard_stops_on_merged_closed_or_changed_head) ... ok
+poll=1 round=1 at=2026-10-09T17:00:05Z status=audit_received
+{"record_id": "comment:1", "body": "AUDIT_DECISION_V1\ntask_id: TASK-20261010-004\npr_number: 5\nhead_sha: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nround: 1\nverdict: request_changes\nnotes: Add a scoped test.", "published_at": "2026-10-09T17:00:01Z", "url": null, "author": null, "decision": {"task_id": "TASK-20261010-004", "pr_number": 5, "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "round": 1, "verdict": "request_changes", "notes": "Add a scoped test."}, "identified_at": "2026-10-09T17:00:05Z", "latency_seconds": 4.0, "action": "rework", "requires_scope_check": true}
+test_live_loop_path_persists_receipt (test_poll.PollTests.test_live_loop_path_persists_receipt) ... ok
+test_review_publication_time_and_draft_filter (test_poll.PollTests.test_review_publication_time_and_draft_filter) ... ok
+test_second_request_escalates_without_second_rework (test_poll.PollTests.test_second_request_escalates_without_second_rework) ... ok
+test_above_limit_escalates (test_workflow.WorkflowTests.test_above_limit_escalates) ... ok
+test_approve_awaits_user (test_workflow.WorkflowTests.test_approve_awaits_user) ... ok
+test_at_default_limit_escalates (test_workflow.WorkflowTests.test_at_default_limit_escalates) ... ok
+test_below_default_limit_reworks (test_workflow.WorkflowTests.test_below_default_limit_reworks) ... ok
+test_custom_boundary_escalates (test_workflow.WorkflowTests.test_custom_boundary_escalates) ... ok
+test_custom_limit_reworks (test_workflow.WorkflowTests.test_custom_limit_reworks) ... ok
+test_first_request_reworks (test_workflow.WorkflowTests.test_first_request_reworks) ... ok
+test_negative_count_is_invalid (test_workflow.WorkflowTests.test_negative_count_is_invalid) ... ok
+test_negative_limit_is_invalid (test_workflow.WorkflowTests.test_negative_limit_is_invalid) ... ok
+test_pending_waits (test_workflow.WorkflowTests.test_pending_waits) ... ok
+test_unknown_verdict_is_invalid (test_workflow.WorkflowTests.test_unknown_verdict_is_invalid) ... ok
+test_zero_limit_escalates (test_workflow.WorkflowTests.test_zero_limit_escalates) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.014s
+
+OK
