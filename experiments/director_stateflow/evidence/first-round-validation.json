@@ -1,0 +1,33 @@
+{
+  "test_exit": 0,
+  "validated_at": "2026-10-10T09:24:09.3029275+08:00",
+  "diff_check_exit": 0,
+  "both_end_actual_display": "not_yet_verified",
+  "task_id": "TASK-20261010-005",
+  "scope_pass": true,
+  "tests_count": 45,
+  "cli_exit": 0,
+  "actual_github_poll_started": false,
+  "base_sha": "d664f1ef8437fbdcd45cea35988cfdbe5d8f265c",
+  "files": [
+    "experiments/director_stateflow/README.md",
+    "experiments/director_stateflow/director_stateflow/__init__.py",
+    "experiments/director_stateflow/director_stateflow/__main__.py",
+    "experiments/director_stateflow/director_stateflow/formatting.py",
+    "experiments/director_stateflow/director_stateflow/github_data.py",
+    "experiments/director_stateflow/director_stateflow/model.py",
+    "experiments/director_stateflow/director_stateflow/observe.py",
+    "experiments/director_stateflow/director_stateflow/process.py",
+    "experiments/director_stateflow/docs/plans/2026-10-10-stateflow.md",
+    "experiments/director_stateflow/evidence/cli-sample.txt",
+    "experiments/director_stateflow/evidence/first-round-tests.txt",
+    "experiments/director_stateflow/examples/awaiting_code.json",
+    "experiments/director_stateflow/examples/awaiting_review.json",
+    "experiments/director_stateflow/examples/awaiting_user.json",
+    "experiments/director_stateflow/examples/checks_started.json",
+    "experiments/director_stateflow/examples/footers.md",
+    "experiments/director_stateflow/examples/reworking.json",
+    "experiments/director_stateflow/tests/test_observe.py",
+    "experiments/director_stateflow/tests/test_stateflow.py"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "sample": true,
+  "events": [
+    {
+      "task_id": "TASK-20261010-005",
+      "seq": 1,
+      "status": "assigned",
+      "owner": "Codex",
+      "pr_url": "none",
+      "head_sha": "none",
+      "updated_at": "2026-10-10T02:00:01+00:00",
+      "next_action": "继续当前授权步骤",
+      "poll_status": "not_started",
+      "poll_interval_seconds": 120,
+      "poll_deadline": "none",
+      "evidence_url": "https://github.com/XC0819/tri-party-ai-pilot/issues/6",
+      "completed": [
+        "示例里程碑"
+      ],
+      "trigger": "真实审计记录匹配后继续",
+      "subtask": "示例测试"
+    },
+    {
+      "task_id": "TASK-20261010-005",
+      "seq": 2,
+      "status": "developing",
+      "owner": "Codex",
+      "pr_url": "none",
+      "head_sha": "none",
+      "updated_at": "2026-10-10T02:00:02+00:00",
+      "next_action": "继续当前授权步骤",
+      "poll_status": "not_started",
+      "poll_interval_seconds": 120,
+      "poll_deadline": "none",
+      "evidence_url": "https://github.com/XC0819/tri-party-ai-pilot/issues/6",
+      "completed": [
+        "示例里程碑"
+      ],
+      "trigger": "真实审计记录匹配后继续",
+      "subtask": "示例测试"
+    },
+    {
+      "task_id": "TASK-20261010-005",
+      "seq": 3,
+      "status": "awaiting_review",
+      "owner": "ChatGPT",
+      "pr_url": "https://github.com/XC0819/tri-party-ai-pilot/pull/99",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "updated_at": "2026-10-10T02:00:03+00:00",
+      "next_action": "继续当前授权步骤",
+      "poll_status": "not_started",
+      "poll_interval_seconds": 120,
+      "poll_deadline": "none",
+      "evidence_url": "https://github.com/XC0819/tri-party-ai-pilot/issues/6",
+      "completed": [
+        "示例里程碑"
+      ],
+      "trigger": "真实审计记录匹配后继续",
+      "subtask": "示例测试"
+    }
+  ]
+}
