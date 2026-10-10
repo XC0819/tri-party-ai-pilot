@@ -1,0 +1,59 @@
+test_duplicate_marker_and_extra_instruction_rejected (test_observe.DecoderTests.test_duplicate_marker_and_extra_instruction_rejected) ... ok
+test_github_state_decodes_and_missing_field_rejected (test_observe.DecoderTests.test_github_state_decodes_and_missing_field_rejected) ... ok
+test_json_audit_matches_context (test_observe.DecoderTests.test_json_audit_matches_context) ... ok
+test_line_audit_multiline_notes_are_data (test_observe.DecoderTests.test_line_audit_multiline_notes_are_data) ... ok
+test_old_head_wrong_task_pr_round_and_invalid_notes_ignored (test_observe.DecoderTests.test_old_head_wrong_task_pr_round_and_invalid_notes_ignored) ... ok
+test_wrong_runtime_context_cannot_claim_running (test_observe.DecoderTests.test_wrong_runtime_context_cannot_claim_running) ... ok
+started pid=9832 run_id=bfb0f078-0295-4e3b-a3c2-e4c469be83c8 deadline=2026-10-10T01:24:19.188827+00:00
+exited status=error result=error
+test_conflicting_current_audits_stop_with_error (test_observe.ObserverTests.test_conflicting_current_audits_stop_with_error) ... ok
+started pid=9832 run_id=1f403dc0-72c6-435c-94bd-5d7fcd51bf29 deadline=2020-01-01T00:00:00Z
+exited status=timeout result=timeout
+test_expired_deadline_stops_without_transport (test_observe.ObserverTests.test_expired_deadline_stops_without_transport) ... ok
+test_merged_or_changed_head_guard (test_observe.ObserverTests.test_merged_or_changed_head_guard) ... ok
+started pid=9832 run_id=f500c2c9-1944-4b71-b07d-90c4b0fe9a39 deadline=2026-10-10T01:24:19.196800+00:00
+exited status=error result=error
+test_permissions_error_stops_and_records_exit (test_observe.ObserverTests.test_permissions_error_stops_and_records_exit) ... ok
+started pid=9832 run_id=c9528564-985c-42b7-9575-e3336f1938ca deadline=2026-10-10T01:24:19.201783+00:00
+{"record_id": "comment:1", "decision": {"task_id": "TASK-20261010-005", "pr_number": 99, "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "round": 1, "verdict": "approve", "notes": "Synthetic review only"}, "published_at": "2026-10-10T01:23:59.202780+00:00", "url": "https://github.com/XC0819/tri-party-ai-pilot/pull/99#issuecomment-1", "author": "synthetic", "identified_at": "2026-10-10T01:23:59.202780+00:00", "latency_seconds": 0.0}
+exited status=stopped result=approve
+test_real_pid_record_stop_and_github_event_backfill_with_mock_transport (test_observe.ObserverTests.test_real_pid_record_stop_and_github_event_backfill_with_mock_transport) ... ok
+test_both_views_have_identical_footer (test_stateflow.DisplayTests.test_both_views_have_identical_footer) ... ok
+test_cli_reads_local_json_and_generates_markdown (test_stateflow.DisplayTests.test_cli_reads_local_json_and_generates_markdown) ... ok
+test_footer_contains_all_user_fields (test_stateflow.DisplayTests.test_footer_contains_all_user_fields) ... ok
+test_multiline_notes_cannot_add_fake_footer_lines (test_stateflow.DisplayTests.test_multiline_notes_cannot_add_fake_footer_lines) ... ok
+test_sample_is_explicitly_labeled (test_stateflow.DisplayTests.test_sample_is_explicitly_labeled) ... ok
+test_dead_process_is_stopped (test_stateflow.ProcessTests.test_dead_process_is_stopped) ... ok
+test_deadline_expires_before_live_claim (test_stateflow.ProcessTests.test_deadline_expires_before_live_claim) ... ok
+test_exit_record_overrides_older_running_claim (test_stateflow.ProcessTests.test_exit_record_overrides_older_running_claim) ... ok
+test_matching_live_identity_and_fresh_record (test_stateflow.ProcessTests.test_matching_live_identity_and_fresh_record) ... ok
+test_real_temporary_process_identity_and_exit (test_stateflow.ProcessTests.test_real_temporary_process_identity_and_exit) ... ok
+test_reused_pid_is_not_running (test_stateflow.ProcessTests.test_reused_pid_is_not_running) ... ok
+test_running_declaration_without_record_is_not_running (test_stateflow.ProcessTests.test_running_declaration_without_record_is_not_running) ... ok
+test_scheduled_is_distinct_from_running (test_stateflow.ProcessTests.test_scheduled_is_distinct_from_running) ... ok
+test_stale_heartbeat_is_not_running (test_stateflow.ProcessTests.test_stale_heartbeat_is_not_running) ... ok
+test_approve_requires_user_responsibility (test_stateflow.StateTests.test_approve_requires_user_responsibility) ... ok
+test_array_order_does_not_roll_back_latest (test_stateflow.StateTests.test_array_order_does_not_roll_back_latest) ... ok
+test_backward_stage_rejected (test_stateflow.StateTests.test_backward_stage_rejected) ... ok
+test_blocked_names_next_responsibility (test_stateflow.StateTests.test_blocked_names_next_responsibility) ... ok
+test_boolean_sequence_not_an_integer (test_stateflow.StateTests.test_boolean_sequence_not_an_integer) ... ok
+test_closed_after_approval_is_terminal (test_stateflow.StateTests.test_closed_after_approval_is_terminal) ... ok
+test_closed_requires_user_approval_record (test_stateflow.StateTests.test_closed_requires_user_approval_record) ... ok
+test_concurrent_same_sequence_conflicts (test_stateflow.StateTests.test_concurrent_same_sequence_conflicts) ... ok
+test_duplicate_same_sequence_is_ignored (test_stateflow.StateTests.test_duplicate_same_sequence_is_ignored) ... ok
+test_higher_sequence_with_older_timestamp_is_ignored (test_stateflow.StateTests.test_higher_sequence_with_older_timestamp_is_ignored) ... ok
+test_merged_is_not_a_state (test_stateflow.StateTests.test_merged_is_not_a_state) ... ok
+test_new_round_and_sha_after_rework (test_stateflow.StateTests.test_new_round_and_sha_after_rework) ... ok
+test_old_round_is_ignored (test_stateflow.StateTests.test_old_round_is_ignored) ... ok
+test_old_sha_cannot_overwrite_review (test_stateflow.StateTests.test_old_sha_cannot_overwrite_review) ... ok
+test_required_fields_missing (test_stateflow.StateTests.test_required_fields_missing) ... ok
+test_rework_same_head_not_accepted (test_stateflow.StateTests.test_rework_same_head_not_accepted) ... ok
+test_role_mismatch_rejected (test_stateflow.StateTests.test_role_mismatch_rejected) ... ok
+test_roles_follow_stage (test_stateflow.StateTests.test_roles_follow_stage) ... ok
+test_second_rework_not_permitted (test_stateflow.StateTests.test_second_rework_not_permitted) ... ok
+test_timestamp_needs_timezone (test_stateflow.StateTests.test_timestamp_needs_timezone) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.111s
+
+OK
